@@ -1,0 +1,50 @@
+/* ///////////////////Texto Importado///////////////////// */
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&display=swap');
+
+body{
+    font-family: 'Open Sans Condensed', sans-serif;
+    overflow-x: hidden;
+}
+
+/* ///////////////////////////////////////BARRA MENU //////////////////////// */
+
+#menunav a{
+    color:olive;
+    font-weight: bold;
+    font-size: 17px;   
+}
+
+#menu button{
+    font-weight: bold;
+    font-size: 17px; 
+}
+
+section{
+    padding-top: 5%;
+    box-shadow: 5px 1px 7px 0px red;
+    border-radius: 5px;
+
+}
+#contenedorprincipal{
+    margin: 25px;
+}
+form{
+    grid-area: form;
+   
+}
+/*//////////////////////////////////////////// FOOTER ///////////////////////// */
+footer{
+    background: #23BAC4;
+    text-align: center;
+    padding: 35px;
+   
+    color: black;
+    width: 100%;
+    box-shadow: 2px;
+
+}
+
+#informacion {
+    display: none;
+  }

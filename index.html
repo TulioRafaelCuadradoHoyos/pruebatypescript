@@ -1,0 +1,178 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="stylesheet" href="./css/estilos.css">
+  
+  <title>Reservas</title>
+</head>
+
+<body class="bg-success">
+  <!-- ////////////////////////////////Header//////////////////////////////// -->
+
+  <header class="container-fluid bg-info d-flex justify-content-center">
+      <p class="mb-0 p-3 fs-5 text-dark">¡¡Reservas STAR, Te da la Bienvenida!!</p>
+  </header>
+
+  <!-- //////////////////////////Barra/////////////////////////// -->
+
+  <nav class="navbar navbar-expand-lg p-4 fs-5  navbar-light bg-light" id="menunav">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#"> <span class="text-primary fs-6 fw-bold">Hoteles Star</span> </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="./Index.html">Inicio</a>
+
+          </li>
+          <!-- ////////////////////////////////////HOTELES EJERCICIO A1 ///////////////////////////// -->
+          <li class="nav-item">
+            <a class="nav-link" href="./reservas.html">Reservas</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Hoteles
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="./arhuaco.html">Hotel Arhuaco</a></li>
+                <li><a class="dropdown-item" href="./cartagena-plaza.html">Hotel Cartagena Plaza</a></li>
+                <li><a class="dropdown-item" href="./radisson.html">Radisson Cartagena Ocean Pavillion Hotel</a></li>
+                <li><a class="dropdown-item" href="./irotoma.html">Irotama Resort</a></li>
+                <li><a class="dropdown-item" href="./hilton-garden.html">Hotel Hilton Garden</a></li>
+                <li><a class="dropdown-item" href="./country.html">Country International Hotel</a></li>
+                <li><a class="dropdown-item" href="./posadas.html">Posadas Ecoturisticas Seineken</a></li>
+                <li><a class="dropdown-item" href="./riviera.html">Hotel La Riviera</a></li>
+                <li><a class="dropdown-item" href="./ayenda.html">Ayenda American Golf 1320</a></li>
+              </ul>
+          </li>
+    </div>
+  </nav>
+<!-- ///////////////////////////////////////// FORMULARIO ///////////////////////////////// -->
+
+<section class="d-flex justify-content-center ">
+<div class="card col-sm-6 p-3" id="contenedorprincipal">
+   <div class="mb-3">
+    <h4>RESERVAS</h4>
+   </div>
+
+    <!-- ////////mensaje/////////7 -->
+        
+    <div id="informacion">formulario</div>
+   <!-- //////////////////////////FORMULARIO////////////////////// -->
+  <div class="mb-2">
+    <form  id="formulario" method="post" action="#">
+        <!-- //////////////////////////NOMBRE////////////////////// -->
+      <div class="mb-2">
+        <label for="nombre">NOMBRE</label>
+        <input type="text" class="form-control"  id="nombre" placeholder="Ingresa tu Nombre" maxlength="25" required>
+      </div>
+      <!-- //////////////////////////APELLIDO////////////////////// -->
+      <div class="mb-2">
+        <label for="Apellido">APELLIDO</label>
+        <input type="text" class="form-control"  id="apellido" placeholder="Ingresa tu Apellido" maxlength="15" required>
+      </div>
+      <!-- //////////////////////////TELEFONO////////////////////// -->
+      <div class="mb-2">
+        <label for="tel">TELEFONO</label>
+        <input type="number" class="form-control"  id="telefono" placeholder="Ingresa tu Telefono" maxlength="12" required>
+      </div>
+      <!-- //////////////////////////CLIENTE////////////////////// -->
+      <div class="mb-2">
+        <label for="cliente">CLIENTE</label>
+        <input type="text" class="form-control"  id="cliente" placeholder="Ingresa tu usuario" maxlength="15" required>
+      </div>
+      <!-- //////////////////////////PASSWORD ////////////////////// -->
+      <div class="mb-2">
+        <label for="password">PASSWORD</label>
+        <input type="password" class="form-control"  id="clave" placeholder="Ingresa tu password" maxlength="15" required>
+      </div>
+      <!-- //////////////////////////CORREO////////////////////// -->
+      <div class="mb-2">
+        <label for="correo">CORREO</label>
+        <input type="email" class="form-control"  id="correo" placeholder="Ingresa tu Correo" maxlength="30" required>
+      </div>
+
+      <label for="fname">Seleccione el hotel a Reservar</label><br><select name="select">
+        <option value="value1"></option>
+        <option value="value2">Hotel Arhuaco</option>
+        <option value="value3" selected>Hotel Cartagena Plaza</option>
+        <option value="value4">Radisson Cartagena Ocean Pavillion Hotel</option>
+        <option value="value5">Irotama Resort</option>
+        <option value="value6">Hotel Hilton Garden</option>
+        <option value="value7">Country International Hotel</option>
+        <option value="value8">Posadas Ecoturisticas Seineken</option>
+        <option value="value9">Hotel La Riviera </option>
+        <option value="value10">Ayenda American Golf 1320</option>
+      </select><br>
+      <label for="fname"> Seleccione La Clase de Habitacion Deseada a Reservar</label><br>
+      <select name="select">
+        <option value="value1">Selecciona Tu Opcion</option>
+        <option value="value1">Superior vista a la ciudad</option>
+        <option value="value2">Superior vista al mar</option>
+        <option value="value3">Habitación superior, 2 camas dobles</option>
+        <option value="value4">Habitación ejecutiva</option>
+        <option value="value5">Room Executive</option>
+        <option value="value6">Room Economy</option>
+        <option value="value7">Suite Standard</option>
+        <option value="value8">Room Premium</option>
+        <option value="value9">Piso Ejecutivo </option>
+      </select><br>
+      <!-- //////////////////////////MENSAJE////////////////////// -->
+
+      <div class="mb-2">
+        <label for="mensaje">MENSAJE</label>
+        <textarea name="mensaje" id="mensaje" class="form-control" placeholder="Escribe Tu Mensaje"></textarea>
+      </div>
+
+      <!-- //////////////////////////BOTONES////////////////////// -->
+      <div class="btn-group" role="group" aria-label="Basic mixed styles example">
+        <div class="mb-2">
+          <button  type="submit" id="enviar" class=" btn-primary">Enviar</button>
+        </div>
+        <div class="mb-2">
+          <input class="btn btn-danger" type="reset" value="Reset">
+        </div><div class="row">
+          <div class="col-md-3">
+            <div class="form-group">
+              <input type="button" class="btn btn-success input-lg" value="Guardar" onclick="guardar()">
+            </div>
+          </div>
+        
+      
+    </form>
+    <script src="./js/app.js" async defer></script>
+  </div>
+  
+</div>
+</section>
+
+<footer class=" d-flex aling-items justify-content-center w-100">
+  <p class=" fs-4 px-3 pt-3">
+     CONTACTO: Daniel Vega: 3008398005
+               
+ </p>
+ <p class=" fs-4 px-3 pt-3">
+     Tulio Cuadrado: 3203628290
+ </p>
+ <p class=" fs-4 px-3 pt-3">
+     Jorge Sandoval: 318 8421903
+ </p>
+ 
+
+</footer>
+
+
+
+<script src="./js/app.js" async defer></script>
+<!-- Option 1: Bootstrap Bundle with Popper -->
+<!-- <script src="js/bootstrap.min.js"></script> -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+
+</body>
+</html>
